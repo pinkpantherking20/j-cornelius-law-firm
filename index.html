@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J. Cornelius Law Firm - Premier Legal Services in Lahore</title>
+  <meta name="description" content="J. Cornelius Law Firm provides expert legal services in Lahore. Specializing in constitutional law, criminal law, civil litigation, and corporate law. Contact us for professional legal consultation.">
+  <meta name="keywords" content="law firm lahore, legal services pakistan, criminal lawyer, civil litigation, constitutional law, corporate law, j cornelius">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="preload" href="assets/js/main.js" as="script">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="J. Cornelius Law Firm - Premier Legal Services">
+  <meta property="og:description" content="Expert legal services in Lahore specializing in constitutional, criminal, and corporate law.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Loading indicator -->
+  <div id="loading-indicator" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.9); z-index: 9999; display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: center;">
+      <div style="border: 4px solid #f3f3f3; border-top: 4px solid #c5a257; border-radius: 50%; width: 40px; height: 40px; animation: spin 2s linear infinite; margin: 0 auto;"></div>
+      <p style="margin-top: 10px; color: #666;">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Include header.html here -->
+  <div include-html="components/header.html"></div>
+  
+  <!-- Main content will be loaded here -->
+  <main>
+    <div include-html="components/home.html"></div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  
+  <!-- Add loading animation styles -->
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Hide content until loaded */
+    body.loading main {
+      opacity: 0;
+    }
+    
+    body.loaded main {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+  </style>
+</body>
+</html>
