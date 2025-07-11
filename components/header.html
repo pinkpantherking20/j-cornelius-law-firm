@@ -1,0 +1,161 @@
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+  
+    /* Top Gold Header Line */
+    .top-bar {
+     background-color: #d2b16a;
+     height: 35px;
+     width: 100%;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 0 40px;
+    }
+
+     .top-contact-info {
+     display: flex;
+     gap: 25px;
+     font-size: 15px;
+     font-family: 'Mulish', sans-serif;
+     color: #000;
+    }
+
+     .top-contact-info i {
+     color: #000; /* force black icons */
+     margin-right: 6px;
+    }
+  
+    /* Main Header */
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px; /* reduced top/bottom padding */
+      background-color: #fff;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .logo {
+      height: 100px;  /* Control height instead of width */
+      width: auto;
+      display: block;
+    }
+  
+    .tagline {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+  
+    /* Nav Styling */
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+  
+    .nav-links a:hover {
+      color: #c5a257;
+    }
+  
+    .contact-btn a {
+      background-color: #c5a257;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-family: 'Mulish', sans-serif;
+    }
+  
+    .contact-btn a:hover {
+      background-color: #b49140;
+    }
+    .nav-links a,
+.contact-btn a {
+  position: relative;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c5a257;
+}
+
+.nav-links a.active {
+  color: #c5a257;
+}
+
+.contact-btn a.active {
+  background-color: #b49140;
+}
+
+  </style>
+
+ <!-- Top Gold Bar -->
+ <div class="top-bar">
+    <div class="top-contact-info">
+      <span><i class="fas fa-phone-alt"></i>  +92 321 4297249</span>
+      <span><i class="fas fa-envelope"></i>  jcorneliuslawfirm@gmail.com</span>
+      <span><i class="fas fa-map-marker-alt"></i>42, The Lower Mall, Lahore</span>
+    </div>
+  </div>
+  
+  
+
+<!-- Main Header -->
+<header class="main-header">
+  <div class="logo-section">
+    <img src="assets/images/logoe.jpg" alt="J. Cornelius Logo" class="logo" />
+    <!-- Optional tagline -->
+    <!-- <p class="tagline">J. Cornelius Law Firm</p> -->
+  </div>
+
+ <nav class="nav-links">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT US</a>
+  <a href="#bare-acts">BARE ACTS</a>
+  <!-- <a href="#contact">CONTACT</a> -->
+</nav>
+
+<div class="contact-btn">
+  <a href="#contact"> Contact Us </a>
+</div>
+
+</header>
